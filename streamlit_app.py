@@ -33,9 +33,9 @@ my_cur.execute("SELECT direct_url, price, size_list, upsell_product_desc FROM ca
 df2 = my_cur.fetchone()
 
 streamlit.image(
-  df2[0],
-  width=400,
-  caption=product_caption
+df2[0],
+width=400,
+caption= product_caption
 )
 
 streamlit.write('Price: ', df2[1])

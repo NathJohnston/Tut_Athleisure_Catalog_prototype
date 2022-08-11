@@ -26,7 +26,7 @@ color_list = df[0].values.tolist()
 option = streamlit.selectbox('Pick a sweatsuit color or style:', list(color_list))
 
 #We'ii build the image cation now, since we can
-product_cation = 'Our warm, comfortable, ' + option + ' sweatsuit!'
+product_caption = 'Our warm, comfortable, ' + option + ' sweatsuit!'
 
 # Use the option selected to go back and get all the info from the database
 my_cur.execute("SELECT direct_url, price, size_list, upsell_product_desc FROM catalog_for_website WHERE color_or_style ='" + option + "';")
